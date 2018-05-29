@@ -1,0 +1,63 @@
+[
+{"namespace": "org.apache.avro.example.bean",
+ "type": "record",
+ "name": "C001",
+ "fields": [
+     {"name": "c001_dummy15", "type": ["long", "null"]},
+     {"name": "c001_dummy16", "type": ["long", "null"]},
+     {"name": "c001_dummy17", "type": ["long", "null"]}
+ ]
+},
+{"namespace": "org.apache.avro.example.bean",
+ "type": "record",
+ "name": "C022",
+ "fields": [
+     {"name": "c022_dummy15", "type": ["long", "null"]},
+     {"name": "c022_dummy16", "type": ["long", "null"]},
+     {"name": "c022_dummy17", "type": ["long", "null"]},
+     {"name": "c022_dummy18", "type": ["long", "null"]}
+ ]
+},
+{"namespace": "org.apache.avro.example.bean",
+ "type": "record",
+ "name": "C122",
+ "fields": [
+     {"name": "c122_dummy15", "type": ["long", "null"]},
+     {"name": "c122_dummy16", "type": ["long", "null"]},
+     {"name": "c122_dummy17", "type": ["long", "null"]},
+     {"name": "c122_dummy18", "type": ["long", "null"]},
+     {"name": "c122_dummy19", "type": ["long", "null"]}
+ ]
+},
+{"namespace": "org.apache.avro.example.bean",
+ "type": "record",
+ "name": "C201",
+ "fields": [
+     {"name": "c201_dummy15", "type": ["long", "null"]},
+     {"name": "c201_dummy16", "type": ["long", "null"]},
+     {"name": "c201_dummy17", "type": ["long", "null"]},
+     {"name": "c201_dummy18", "type": ["long", "null"]},
+     {"name": "c201_dummy19", "type": ["long", "null"]},
+     {"name": "c201_dummy20", "type": ["long", "null"]}
+ ]
+},
+{"namespace": "org.apache.avro.example.bean",
+ "type": "record",
+ "name": "CanData",
+ "fields": [
+     {"name": "c001", "type": "C001"},
+     {"name": "c022", "type": "C022"},
+     {"name": "c122", "type": "C122"},
+     {"name": "c201", "type": "C201"}
+ ]
+},
+{"namespace": "org.apache.avro.example.bean",
+ "type": "record",
+ "name": "InputCanInfo",
+ "fields": [
+     {"name": "canId", "type": "string"},
+     {"name": "canTime", "type": ["long", "null"]},
+     {"name": "canData", "type": "CanData"}
+ ]
+}
+]

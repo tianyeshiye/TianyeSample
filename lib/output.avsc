@@ -1,0 +1,15 @@
+{"namespace": "org.apache.avro.example.bean",
+ "type": "record",
+ "name": "OutputCanInfo",
+ "fields": [
+     {"name": "canId", "type": "string"},
+     {"name": "canTime", "type": ["long", "null"]},
+     {"name": "c001_dummy15", "type": ["long", "null"]},
+     {"name": "c001_dummy16", "type": ["long", "null"]},
+     {"name": "c001_dummy17", "type": ["long", "null"]},
+     {"name": "c022_dummy15", "type": ["long", "null"]},
+     {"name": "c022_dummy16", "type": ["long", "null"]},
+     {"name": "c022_dummy17", "type": ["long", "null"]},
+     {"name": "c022_dummy18", "type": ["long", "null"]}
+ ]
+}
