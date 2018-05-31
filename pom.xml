@@ -70,19 +70,19 @@
 			</exclusions>
 			<scope>provided</scope>
 		</dependency>
-		
-		<dependency>
-            <groupId>org.apache.hive</groupId>
-            <artifactId>hive-exec</artifactId>
-            <version>1.2.1</version>
 
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.avro</groupId>
-                    <artifactId>avro</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+		<dependency>
+			<groupId>org.apache.hive</groupId>
+			<artifactId>hive-exec</artifactId>
+			<version>1.2.1</version>
+
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.avro</groupId>
+					<artifactId>avro</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
 		<dependency>
 			<groupId>org.apache.avro</groupId>
@@ -96,12 +96,70 @@
 			<version>1.8.2</version>
 		</dependency>
 
+		<!-- redis -->
 		<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 			<version>2.9.0</version>
 		</dependency>
+		
+		<dependency>
+    <groupId>org.rocksdb</groupId>
+    <artifactId>rocksdbjni</artifactId>
+    <version>5.13.1</version>
+</dependency>
+		
+		<!-- <dependency> <groupId>org.ethereum</groupId> <artifactId>rocksdbjni</artifactId> 
+			<version>5.9.2</version> </dependency> -->
 
+		<!-- kafka -->
+		<!-- <dependency> <groupId>org.apache.kafka</groupId> <artifactId>kafka_2.12</artifactId> 
+			<version>1.1.0</version> </dependency> -->
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka_2.11</artifactId>
+			<version>0.8.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			<version>0.8.2.0</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>com.lamfire</groupId> <artifactId>lamfire</artifactId> 
+			<version>2.3.20</version> <exclusions> <exclusion> <groupId>javax.mail</groupId> 
+			<artifactId>mail</artifactId> </exclusion> </exclusions> </dependency> -->
+		<dependency>
+			<groupId>commons-cli</groupId>
+			<artifactId>commons-cli</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.101tec</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.5</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+
+
+		<!-- junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -131,20 +189,10 @@
 				<groupId>org.apache.avro</groupId>
 				<artifactId>avro-maven-plugin</artifactId>
 				<version>1.7.5</version>
-			<!--  	
-			<executions>
-					<execution>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>schema</goal>
-						</goals>
-						<configuration>
-							<sourceDirectory>${project.basedir}/avro-generate-sources/</sourceDirectory>
-							<outputDirectory>${project.basedir}/avro-generate-sources/</outputDirectory>
-						</configuration>
-					</execution>
-				</executions>
-				-->
+				<!-- <executions> <execution> <phase>generate-sources</phase> <goals> 
+					<goal>schema</goal> </goals> <configuration> <sourceDirectory>${project.basedir}/avro-generate-sources/</sourceDirectory> 
+					<outputDirectory>${project.basedir}/avro-generate-sources/</outputDirectory> 
+					</configuration> </execution> </executions> -->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
