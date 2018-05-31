@@ -13,10 +13,34 @@
 		<spark.version>2.2.1</spark.version>
 		<scala.version>2.11</scala.version>
 		<hadoop.version>2.7.3</hadoop.version>
+		<hbase.version>0.98.6-cdh5.2.0</hbase.version>
 
 	</properties>
 
 	<dependencies>
+	
+	
+	<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-streaming_2.10</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-streaming-kafka_2.11</artifactId>
+    <version>1.6.3</version>
+</dependency>
+
+		<dependency>
+    <groupId>org.apache.hbase</groupId>
+    <artifactId>hbase-client</artifactId>
+    <version>2.0.0</version>
+</dependency>
+		<dependency>
+    <groupId>org.apache.hbase</groupId>
+    <artifactId>hbase-server</artifactId>
+    <version>2.0.0</version>
+</dependency>
 
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
@@ -95,6 +119,13 @@
 			<artifactId>avro-tools</artifactId>
 			<version>1.8.2</version>
 		</dependency>
+
+<!-- yaml -->
+<dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.15</version>
+        </dependency>
 
 		<!-- redis -->
 		<dependency>
